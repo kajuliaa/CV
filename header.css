@@ -1,4 +1,4 @@
-.header_social {
+.header-social {
     position: absolute;
     top: 50%;
     left: 50px;
@@ -9,4 +9,11 @@
     transform: translateY(-50%);
     border: 1px solid rgba(0, 167, 142, 0.21);
     border-radius: 50px;
+    list-style-type: none;
+    padding: 5px;
+}
+.about{
+    position: absolute;
+    top:50%;
+    transform:translate(0, -50%);
 }
