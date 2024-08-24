@@ -19,29 +19,16 @@
     <div class="header">
 
         <!--Navigation-->
-     <nav class="navbar navbar-expand-lg fixed-top bg-light">
-            <a class="navbar-brand">Yuliia Kaidashova</a>
-            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="navbar-brand">Yuliia Kaidashova</div>
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">About me</a>
-                    <a class="nav-link" href="#">My Works</a>
-                    <a class="nav-link" href="#">My Education</a>
-                </div>
-                
-            </div>
-        </nav>
-    
-
-        <!--Main content-->
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-center align-items-center" id="test">
-
-                <!--Social networks bar-->
-                <div class="border-social">
-                    <ul class="header-social d-none d-lg-block list-group list-unstyled">
+                <div class="social">
+                    <ul class="header-social list-group list-unstyled d-flex flex-row">
                         <li>
                             <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         </li>
@@ -51,11 +38,22 @@
                         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                     </ul>
                 </div>
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">About me</a>
+                    <a class="nav-link" href="#">My Works</a>
+                    <a class="nav-link" href="#">My Education</a>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!--Main content-->
+        <div class="container-fluid" id ="start">
+            <div class="row d-flex justify-content-center align-items-center" id="test">
 
                 <!--Section with text-->
-                <div class="col-lg-3 col-sm-0"></div>
-
-                <div class="col-lg-3 col-sm-6 d-flex justify-content-end flex-column">
+                <div class="col-lg-6 col-sm-6 d-flex justify-content-end flex-column greeting">
                     <h5>Hello I'm</h5>
                     <h2>Yuliia Kaidashova</h2>
                     <span>Frontend developer</span>
@@ -63,22 +61,23 @@
                 </div>
 
                 <div class="col-lg-6 col-sm-6">
-                    <img src="images/yulik.png" />
+                    <img src="images/yulik.png" id="yulik"/>
                 </div>
             </div>
         </div>
+        <div class="header_hero_shape"></div>
     </div>
 
     <!--My projects-->
-    <div class="my-projects">
-        <div class="row">
+    <div class="my-projects m-2">
+        <div class="row m-2 d-flex align-items-center">
             <div class="col-6">
-                <h1>My projects</h1>
+                <h1 class="title">My projects</h1>
             </div>
         </div>
         <div class="row ml-2 mr-2 mb-4">
-            <div class="col-lg-3 col-sm-6" >
-                <div class="card"  id="first-card">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card" id="first-card">
                     <img class="card-img-top" src="images/weatherApp.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Weather App</p>
@@ -106,6 +105,86 @@
                     <img class="card-img-top" src="images/javascript.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Javascript/Typescript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--My Work experience-->
+    <div class="work-experie m-2">
+        <div class="row d-flex justify-content-center">
+            <h1 class="title m-2">Work experience</h1>
+        </div>
+        <div class="testing">
+            <div class="work-experience">
+                <div class="row m-3">
+                    <div class="col-lg-12 flex-wrap align-items-center d-flex justify-content-center">
+                        <div style="width:46%">
+                            <div class="card description">
+                                <div class="card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia
+                                    magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam
+                                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem
+                                    ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor
+                                    consetetur sadipscing elitr sed diam nonumy diam...</div>
+                            </div>
+                        </div>
+                        <div class="experience-number text-center" style="width: 8%;">
+                            <span>1</span>
+                        </div>
+                        <div style="width:46%">
+                            <h1 class="proffesional">Frontend Development (Working Student)</h1>
+                            <h2 class="company">Siemens AG</h2>
+                            <p class="date">November 2023 - March 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-12 flex-wrap align-items-center d-flex justify-content-center">
+                        <div style="width:46% " class="d-flex flex-column align-items-end">
+                            <h1 class="proffesional">Teaching Assistant (Math for Computer Science)</h1>
+                            <h2 class="company">Otto-Friedrich University Bamberg</h2>
+                            <p class="date">October 2023 - March 2024</p>
+                        </div>
+                        <div class="experience-number text-center" style="width: 8%;">
+                            <span>2</span>
+                        </div>
+                        <div style="width:46%">
+                            <div class="card description">
+                                <div class="card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia
+                                    magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam
+                                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem
+                                    ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor
+                                    consetetur sadipscing elitr sed diam nonumy diam...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-12 flex-wrap align-items-center d-flex justify-content-center">
+                        <div style="width:46%">
+                            <div class="card description">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed
+                                    diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor
+                                    sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut
+                                    labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing
+                                    elitr sed diam nonumy diam...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-number text-center" style="width: 8%;">
+                            <span>3</span>
+                        </div>
+                        <div style="width:46%">
+                            <h1 class="proffesional">Frontend development (Working Student)</h1>
+                            <h2 class="company">Siemens AG</h2>
+                            <p class="date">October 2022 - April 2023</p>
+                        </div>
                     </div>
                 </div>
             </div>
