@@ -12,8 +12,45 @@
     list-style-type: none;
     padding: 5px;
 }
-.about{
-    position: absolute;
-    top:50%;
-    transform:translate(0, -50%);
-}
+/*div#bottom {
+    position: fixed;
+    bottom: 0;
+
+    left: 0;
+    right: 0;
+  }*/
+
+ #test{
+    height: 100vh;
+ }
+
+ .card#first-card{
+    animation: fadeInUpBig 1.3s 0.7s;
+    visibility: visible;
+ }
+
+ .card#second-card{
+    animation: fadeInUpBig 1.3s 0.9s;
+ }
+
+ .card#third-card{
+    animation: fadeInUpBig 1.3s 1.1s;
+ }
+
+ .card#forth-card{
+    animation: fadeInUpBig 1.3s 1.3s;
+ }
+
+
+ @keyFrames fadeInUpBig{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0) !important;
+        transform: translate3d(0, 100px, 0);
+    }
+    to{
+        opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+ }

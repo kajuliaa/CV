@@ -17,20 +17,29 @@
 
 <body>
     <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+
+        <!--Navigation-->
+     <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <a class="navbar-brand">Yuliia Kaidashova</a>
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                 <div class="navbar-nav">
-                    <a class="navbar-brand">Yuliia Kaidashova</a>
                     <a class="nav-link active" aria-current="page" href="#">About me</a>
                     <a class="nav-link" href="#">My Works</a>
                     <a class="nav-link" href="#">My Education</a>
                 </div>
+                
             </div>
         </nav>
+    
 
+        <!--Main content-->
         <div class="container-fluid">
-            <div class="row d-flex justify-content-center align-middle">
+            <div class="row d-flex justify-content-center align-items-center" id="test">
 
+                <!--Social networks bar-->
                 <div class="border-social">
                     <ul class="header-social d-none d-lg-block list-group list-unstyled">
                         <li>
@@ -43,14 +52,62 @@
                     </ul>
                 </div>
 
+                <!--Section with text-->
+                <div class="col-lg-3 col-sm-0"></div>
 
-                <div class="col-6 about">
+                <div class="col-lg-3 col-sm-6 d-flex justify-content-end flex-column">
                     <h5>Hello I'm</h5>
                     <h2>Yuliia Kaidashova</h2>
                     <span>Frontend developer</span>
                     <p>Education-hungry and ready for new expirience</p>
                 </div>
 
+                <div class="col-lg-6 col-sm-6">
+                    <img src="images/yulik.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--My projects-->
+    <div class="my-projects">
+        <div class="row">
+            <div class="col-6">
+                <h1>My projects</h1>
+            </div>
+        </div>
+        <div class="row ml-2 mr-2 mb-4">
+            <div class="col-lg-3 col-sm-6" >
+                <div class="card"  id="first-card">
+                    <img class="card-img-top" src="images/weatherApp.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Weather App</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card" id="second-card">
+                    <img class="card-img-top" src="images/calculator.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">React Calculator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card" id="third-card">
+                    <img class="card-img-top" src="images/ticToe.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">React Tic Toe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card" id="forth-card">
+                    <img class="card-img-top" src="images/javascript.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Javascript/Typescript</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
