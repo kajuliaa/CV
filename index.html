@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <section>
     <div class="header">
 
         <!--Navigation-->
@@ -39,16 +40,17 @@
                     </ul>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">About me</a>
-                    <a class="nav-link" href="#">My Works</a>
-                    <a class="nav-link" href="#">My Education</a>
+                    <a class="nav-link active fw-bold" href="#">About me</a>
+                    <a class="nav-link fw-bold" href="#projects">My Works</a>
+                    <a class="nav-link fw-bold" href="#work-experience">My Education</a>
                 </div>
 
             </div>
         </nav>
 
-
+    
         <!--Main content-->
+        
         <div class="container-fluid" id ="start">
             <div class="row d-flex justify-content-center align-items-center" id="test">
 
@@ -67,16 +69,17 @@
         </div>
         <div class="header_hero_shape"></div>
     </div>
-
+</section>
     <!--My projects-->
-    <div class="my-projects m-2">
+    <section id="projects" class="d-flex">
+    <div class="my-projects m-2 d-flex justify-content-center flex-column">
         <div class="row m-2 d-flex align-items-center">
-            <div class="col-6">
+            <div class="col-12 d-flex justify-content-center">
                 <h1 class="title">My projects</h1>
             </div>
         </div>
-        <div class="row ml-2 mr-2 mb-4">
-            <div class="col-lg-3 col-sm-6">
+        <div class="row ml-2 mr-2 mb-4 d-flex flex-wrap">
+            <div class="col-lg-3 col-sm-6 d-flex">
                 <div class="card" id="first-card">
                     <img class="card-img-top" src="images/weatherApp.png" alt="Card image cap">
                     <div class="card-body">
@@ -84,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6 d-flex">
                 <div class="card" id="second-card">
                     <img class="card-img-top" src="images/calculator.png" alt="Card image cap">
                     <div class="card-body">
@@ -92,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6 d-flex">
                 <div class="card" id="third-card">
                     <img class="card-img-top" src="images/ticToe.png" alt="Card image cap">
                     <div class="card-body">
@@ -100,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6 d-flex">
                 <div class="card" id="forth-card">
                     <img class="card-img-top" src="images/javascript.png" alt="Card image cap">
                     <div class="card-body">
@@ -110,11 +113,12 @@
             </div>
         </div>
     </div>
-
+</section>
     <!--My Work experience-->
+    <section id="work-experience">
     <div class="work-experie m-2">
         <div class="row d-flex justify-content-center">
-            <h1 class="title m-2">Work experience</h1>
+            <h1 class="title m-2 d-flex justify-content-center">Work experience</h1>
         </div>
         <div class="testing">
             <div class="work-experience">
@@ -190,6 +194,7 @@
             </div>
         </div>
     </div>
+</section>
 </body>
 
 </html>
