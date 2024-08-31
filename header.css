@@ -1,24 +1,60 @@
 
+@media (max-width:500px){
+    #yulik{
+        position: relative !important;
+        display: block;
+        max-width: 100%;
+    }
+
+    .header_hero_shape::before {
+        display:none;
+    }
+
+    .social{
+        display: none;
+    }
+    .navbar-nav{
+        position:absolute;
+        top:70px;
+        flex-direction: column;
+        left:0;
+        right:0;
+        text-align: center;
+        background-color: #00A78E;
+        overflow: hidden!important;
+    }
+    nav{
+        background-color: #00A78E;
+    }
+    #navi{
+        overflow: hidden!important;
+    }
+}
+
 #test{
     height:100vh;
 }
 
- .card#first-card{
-    animation: fadeInUpBig 1.3s 0.7s;
-    visibility: visible;
+ .card.animated#first-card{
+    animation: fadeInUpBig 1.3s 0.3s;
+    
  }
 
- .card#second-card{
+ .card.animated#second-card{
+    animation: fadeInUpBig 1.3s 0.5s;
+  
+ }
+
+ .card.animated#third-card{
+    animation: fadeInUpBig 1.3s 0.7s;
+ }
+
+ .card.animated#forth-card{
     animation: fadeInUpBig 1.3s 0.9s;
  }
 
- .card#third-card{
-    animation: fadeInUpBig 1.3s 1.1s;
- }
 
- .card#forth-card{
-    animation: fadeInUpBig 1.3s 1.3s;
- }
+
 
 
  @keyFrames fadeInUpBig{
@@ -96,8 +132,12 @@
         font-family:'Courier New', Courier, monospace;
     }
     body{
-        overflow-x: hidden;
+        overflow-x: hidden!important;
         font-family:'Courier New', Courier, monospace;
+    }
+
+    html{
+        overflow-x: hidden;
     }
     .title{
         font-family:'Courier New', Courier, monospace;
@@ -146,7 +186,7 @@
 
 
 #start{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -156,10 +196,7 @@
     right:0;
 }
 
-.greeting{
-    position:absolute;
-    top: 50%;
-}
+
 .nav-link{
     color: aliceblue!important;
    
@@ -259,3 +296,4 @@ section{
     visibility: visible;
     width: 60%!important;
 }
+

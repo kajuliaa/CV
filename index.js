@@ -5,7 +5,7 @@ console.log(document.querySelector("body"));
  //===== Sticky
 
  $(window).on('scroll', function (event) {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
     if (scroll < 20) {
         $(".header-navbar").removeClass("sticky");
     } else {
@@ -30,3 +30,16 @@ for(let i =0; i<btn.length; i++){
 }
 }
 });
+
+$(window).on('scroll', function (event) {
+    let scroll = $(window).scrollTop();
+    console.log(scroll)
+    if (scroll < 500) {
+        $(".card").removeClass("animated");
+    } else {
+        $(".card").addClass("animated");
+    }
+});
+
+let menuList = document.getElementById("navi");
+menuList.style.maxHeight = "0px";

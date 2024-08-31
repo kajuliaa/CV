@@ -20,7 +20,6 @@
 <body>
     <section class="header-area">
         <div class="header-navbar">
-
             <!--Navigation-->
             <div class="container">
                 <div class="row">
@@ -30,10 +29,10 @@
                             <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon" onclick="toggleMenu()"></span>
                             </button>
                             <div class="collapse navbar-collapse d-flex justify-content-end"
-                                id="navbarSupportedContent">
+                                id="navbarSupportedContent"> 
                                 <div class="social">
                                     <ul class="header-social list-group list-unstyled d-flex flex-row">
                                         <li>
@@ -46,12 +45,12 @@
                                     </ul>
                                 </div>
                                 <div class="navbar-nav" id="navi">
-                                    <a class="nav-link active fw-bold hi" href="#">About me <span></span></a>
-                                  
+                                    <a class="nav-link active fw-bold hi" href="#start">About me <span></span></a>
+
                                     <a class="nav-link fw-bold" href="#projects">My Works <span></span></a>
-                            
+
                                     <a class="nav-link fw-bold" href="#work-experience">My Education <span></span></a>
-                                   
+
                                 </div>
 
                             </div>
@@ -63,61 +62,64 @@
 
         <!--Main content-->
 
-        <div class="container" id="start">
+        <div class="container" >
+            <div class="row align-items-center justify-content-center justify-content-lg-between" id ="start">
             <!--Section with text-->
-            <div class="col-lg-6 col-sm-6 col-md-6 d-flex justify-content-end flex-column greeting">
+            <div class="col-lg-6 greeting">
                 <h5>Hello I'm</h5>
                 <h2>Yuliia Kaidashova</h2>
                 <span>Frontend developer</span>
                 <p>Education-hungry and ready for new expirience</p>
             </div>
-
-            <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="col-lg-6 col-sm-7">
                 <img src="images/yulik.png" id="yulik" />
             </div>
         </div>
+    </div>
 
         <div class="header_hero_shape"></div>
         </div>
     </section>
     <!--My projects-->
     <section id="projects" class="d-flex">
-        <div class="my-projects m-2 d-flex justify-content-center flex-column">
-            <div class="row m-2 d-flex align-items-center">
-                <div class="col-12 d-flex justify-content-center">
-                    <h1 class="title">My projects</h1>
-                </div>
-            </div>
-            <div class="row ml-2 mr-2 mb-4 d-flex flex-wrap">
-                <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
-                    <div class="card" id="first-card">
-                        <img class="card-img-top" src="images/weatherApp.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Weather App</p>
-                        </div>
+        <div class="container">
+            <div class="my-projects m-2 d-flex justify-content-center flex-column">
+                <div class="row m-2 d-flex align-items-center">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h1 class="title">My projects</h1>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
-                    <div class="card" id="second-card">
-                        <img class="card-img-top" src="images/calculator.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">React Calculator</p>
+                <div class="row ml-2 mr-2 mb-4 d-flex flex-wrap">
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                        <div class="card" id="first-card">
+                            <img class="card-img-top" src="images/weatherApp.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Weather App</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
-                    <div class="card" id="third-card">
-                        <img class="card-img-top" src="images/ticToe.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">React Tic Toe</p>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                        <div class="card" id="second-card">
+                            <img class="card-img-top" src="images/calculator.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">React Calculator</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
-                    <div class="card" id="forth-card">
-                        <img class="card-img-top" src="images/javascript.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Javascript/Typescript</p>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                        <div class="card" id="third-card">
+                            <img class="card-img-top" src="images/ticToe.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">React Tic Toe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                        <div class="card" id="forth-card">
+                            <img class="card-img-top" src="images/javascript.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Javascript/Typescript</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,33 +128,37 @@
     </section>
     <!--My Work experience-->
     <section id="work-experience">
-        <div class="work-experie m-2">
-            <div class="row d-flex justify-content-center">
-                <h1 class="title m-2 d-flex justify-content-center">Work experience</h1>
-            </div>
-            <div class="testing">
-                <div class="work-experience">
-                    <div class="row m-3">
-                        <div class="col-lg-12 flex-wrap align-items-center d-flex justify-content-center">
-                            <div style="width:46%">
-                                <div class="card description">
-                                    <div class="card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia
-                                        magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed
-                                        diam
-                                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed
-                                        diam.Lorem
-                                        ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor
-                                        consetetur sadipscing elitr sed diam nonumy diam...</div>
+        <div class="container">
+            <div class="work-experie m-2">
+                <div class="row d-flex justify-content-center">
+                    <h1 class="title m-2 d-flex justify-content-center">Work experience</h1>
+                </div>
+                <div class="testing">
+                    <div class="work-experience">
+                        <div class="row m-3">
+                            <div class="col-lg-12 flex-wrap align-items-center d-flex justify-content-center">
+                                <div style="width:46%">
+                                    <div class="card description">
+                                        <div class="card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                                            sedia
+                                            magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr
+                                            sed
+                                            diam
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed
+                                            diam.Lorem
+                                            ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod
+                                            tempor
+                                            invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor
+                                            consetetur sadipscing elitr sed diam nonumy diam...</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="experience-number text-center" style="width: 8%;">
-                                <span>1</span>
-                            </div>
-                            <didv style="width:46%">
-                                <h1 class="proffesional">Frontend Development (Working Student)</h1>
-                                <h2 class="company">Siemens AG</h2>
-                                <p class="date">November 2023 - March 2025</p>
+                                <div class="experience-number text-center" style="width: 8%;">
+                                    <span>1</span>
+                                </div>
+                                <didv style="width:46%">
+                                    <h1 class="proffesional">Frontend Development (Working Student)</h1>
+                                    <h2 class="company">Siemens AG</h2>
+                                    <p class="date">November 2023 - March 2025</p>
                             </div>
                         </div>
                     </div>
@@ -209,6 +215,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </body>
